@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class TimeScoreBonus : MonoBehaviour
 {
-    [SerializeField] NumberFieldGUI scoreField; 
+    [SerializeField] NumberFieldGUI scoreField;
     [SerializeField] float interval = 5f; // Time interval in seconds 
     [SerializeField] int pointsPerInterval = 2; // Points to add each interval
 
@@ -19,7 +19,7 @@ public class TimeScoreBonus : MonoBehaviour
 
         if (timer >= interval)
         {
-            timer -= interval; 
+            timer -= interval;
 
             if (scoreField != null)
             {
