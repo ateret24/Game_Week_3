@@ -1,42 +1,26 @@
-# Unity week 2: Formal elements
+# Game week 3: prefabs-triggers-master
 
-A project with step-by-step scenes illustrating some of the formal elements of game development in Unity, including: 
+In the game, the spaceship fights enemy spacecraft.
+The goal is to shoot them and blow them up.
+Each spaceship that explodes gives a point.
 
-* Prefabs for instantiating new objects;
-* Colliders for triggering outcomes of actions;
-* Coroutines for setting time-based rules.
+## Additions to the game from the given list:
 
-Text explanations are available 
-[here](https://github.com/gamedev-at-ariel/gamedev-5782) in folder 04.
+- The player’s score is no longer displayed under the spaceship but instead in a fixed position on the screen, in the bottom-right corner, and it remains in that position even when the world size changes or when the screen rotates.
 
-## Cloning
-To clone the project, you may need to install git lfs first (if it is not already installed):
+- The world is circular on the horizontal axis and closed on the vertical axis.
+This means that when the player reaches the right edge of the world, they appear on the left side, and vice versa.
 
-    git lfs install 
+## Additional features I chose to add:
 
-To clone faster, you can limit the depth to 1 like this:
+- I added a “survival time bonus” to the scoring system:
+The player receives extra points just for staying alive. Every X seconds that the player survives, Y points are added.
+This way, the player is rewarded not only for hitting enemies but also for avoiding danger and lasting as long as possible.
+It creates motivation to “survive” longer and adds a sense of steady progression.
 
-    git clone --depth=1 https://github.com/<repository-name>.git
+- I added an effect where, every few seconds — independently of anything else — the player receives a random shooting mode.
+This changes how the player shoots and creates a feeling of a dynamic, ever-changing game.
+It adds interest because the player must adapt to the new shooting mode during gameplay.
+It introduces variety without breaking the game’s balance.
 
-When you first open this project, you may not see the text in the score field.
-This is because `TextMeshPro` is not in the project.
-The Unity Editor should hopefully prompt you to import TextMeshPro;
-once you do this, re-open the scenes, and you should be able to see the texts.
-
-
-
-## Credits
-
-Programming:
-* Maoz Grossman
-* Erel Segal-Halevi
-
-Online courses:
-* [The Ultimate Guide to Game Development with Unity 2019](https://www.udemy.com/the-ultimate-guide-to-game-development-with-unity/), by Jonathan Weinberger
-
-Graphics:
-* [Matt Whitehead](https://ccsearch.creativecommons.org/photos/7fd4a37b-8d1a-4d4c-80a2-4ca4a3839941)
-* [Kenney's space kit](https://kenney.nl/assets/space-kit)
-* [Ductman's 2D Animated Spacehips](https://assetstore.unity.com/packages/2d/characters/2d-animated-spaceships-96852)
-* [Franc from the Noun Project](https://commons.wikimedia.org/w/index.php?curid=64661575)
-* [Greek-arrow-animated.gif by Andrikkos is licensed under CC BY-SA 3.0](https://search.creativecommons.org/photos/2db102af-80d0-4ec8-9171-1ac77d2565ce)
+Link to itch.io - https://ateretaliya.itch.io/game-week-3-ateret
